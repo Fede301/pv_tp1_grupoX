@@ -3,17 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/stylesperfil.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
     <title>Perfil del usuario</title>
 </head>
 <body>
-    <h1>Datos del usuario</h1>
-    <img alt="foto-perfil" src="https://cdn.pixabay.com/photo/2023/02/18/11/00/icon-7797704_1280.png" width="150">
-    <h2>Nombre: Carolina Apaza</h2>
-    <h2>Rol:
-        <select name="select">
-            <option value="value1">Alumno</option>
-            <option value="value2">Docente</option>
-        </select>
-    </h2>
+    <header>
+        <h1 style =text-decoration:underline; >PROYECTOS EDUCATIVOS</h1>
+        <h2>Mi Perfil</h2>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="proyecto.html">Proyectos</a></li>
+            <li><a href="detalle.html">Detalles Del Proyecto</a></li>
+        </ul>
+    </nav>
+
+    <figure>
+            <img alt="foto-perfil" src="https://cdn.pixabay.com/photo/2023/02/18/11/00/icon-7797704_1280.png" width="150">
+            <figcaption>Usuario: caroZ11</figcaption>
+        </figure>
+
+    <form action="#" method="post">
+        <fieldset>
+            <legend>Datos Personales</legend>
+            <label for="nombre">Nombre Completo</label>
+            <input type="text" id="nombre" name="nombre" value="Carolina Apaza" readonly required><br>
+            
+            <label for="rol">Rol</label>
+            <input type="text" id="rol" name="rol" value="Docente" readonly required>
+        </fieldset>
+
+        <fieldset>
+            <legend>Preferencias de Sistema</legend>
+            <input type="checkbox" id="notificaciones" name="notificaciones" checked>
+            <label for="notificaciones">Recibir notificaciones por correo</label><br>
+        </fieldset>
+    </form>
+
+
+
+    <footer>
+        <p> Programacion visual 2026  -   Facultad de Ingenieria </p>
+    </footer>
 </body>
 </html>
