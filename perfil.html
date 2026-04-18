@@ -11,17 +11,19 @@
     <title>Perfil del usuario</title>
 </head>
 <body>
-    <header>
-        <h1 style =text-decoration:underline; >PROYECTOS EDUCATIVOS</h1>
-        <h2>Mi Perfil</h2>
+    <header id="encabezado">
+        <h1>PROYECTOS EDUCATIVOS</h1>
+
+        <nav id="navegacion">
+            <ul id="lista-navegacion">
+                <li class="opcion-lista"><a href="index.html">INICIO</a></li>
+                <li class="opcion-lista"><a href="proyectos.html">PROYECTOS</a></li>
+                <li class="opcion-lista"><a href="detalle.html">DETALLES DE PROYECTOS</a></li>
+            </ul>
+        </nav>
     </header>
-    <nav>
-        <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="proyecto.html">Proyectos</a></li>
-            <li><a href="detalle.html">Detalles Del Proyecto</a></li>
-        </ul>
-    </nav>
+
+    <h2>Mi Perfil</h2>
 
     <figure>
             <img alt="foto-perfil" src="https://cdn.pixabay.com/photo/2023/02/18/11/00/icon-7797704_1280.png" width="150">
@@ -35,7 +37,10 @@
             <input type="text" id="nombre" name="nombre" value="Carolina Apaza" readonly required><br>
             
             <label for="rol">Rol</label>
-            <input type="text" id="rol" name="rol" value="Docente" readonly required>
+            <select name="rol" id="rol">
+                <option value="estudiante">Estudiante</option>
+                <option value="docente">Docente</option>
+            </select>
         </fieldset>
 
         <fieldset>
