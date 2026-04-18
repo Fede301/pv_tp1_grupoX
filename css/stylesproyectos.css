@@ -9,6 +9,7 @@
   --font-main: 'Inter', sans-serif;
   --font-size-base: 16px;
   --font-weight-bold: 600;
+  --color-efecto: #3b82f6;
 }
 .menu ul {
   display: flex;
@@ -27,7 +28,7 @@
   color: white;
   font-family:Georgia;
 }
-.menu a:hover {
+.menu a:hover, article a:hover {
     color: #3b82f6;
 }
 
@@ -39,7 +40,7 @@ header {
 }
 body{
   font-family: var(--font-main);
-  font-size: var(-font-size-base);
+  font-size: var(--font-size-base);
  background-color:#1e293b
  }
  * {
@@ -54,10 +55,11 @@ h1, h2, h3, h4 {
 
 h2 {
   text-align: center; 
+}
 h3 {
  text-decoration: underline;
 }
-}
+
 h4 {
   text-underline-offset: 6px;
   font-size: 2.5rem;
