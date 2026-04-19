@@ -13,7 +13,6 @@
 <body>
     <header>
         <h1 style =text-decoration:underline; >PROYECTOS EDUCATIVOS</h1>
-        <h2>Bienvenidos a Gestión de Proyectos Educativos</h2>
     </header>
     <nav class="menu">
         <ul>
@@ -27,27 +26,64 @@
         <h2>Mi Perfil</h2>
         
         <figure class="caja-rellena">
-            <img alt="foto-perfil" src="https://cdn.pixabay.com/photo/2023/02/18/11/00/icon-7797704_1280.png" width="150">
-            <figcaption>Usuario: caroZ11</figcaption>
+            <img alt="foto-perfil" src="https://cdn.pixabay.com/photo/2023/02/18/11/00/icon-7797704_1280.png">
+            <figcaption>Foto de perfil</figcaption>
         </figure>
 
         <form action="#" method="post">
             <fieldset class="caja-rellena">
                 <legend class="caja-rellena">Datos Personales</legend>
-                <label for="nombre">Nombre Completo</label>
-                <input class="datos" type="text" id="nombre" name="nombre" value="Carolina Apaza" readonly required><br>
+
+                <div class="campo">
+                    <label for="nombre">Nombre Completo</label>
+                    <input class="datos" type="text" id="nombre" name="nombre" value="Carolina Apaza" readonly required>
+                </div>
                 
-                <label for="rol">Rol</label>
-                <select class="datos" name="rol" id="rol">
-                    <option value="estudiante">Estudiante</option>
-                    <option value="docente">Docente</option>
-                </select>
+                <div class="campo">
+                    <label for="rol">Rol</label>
+                    <select class="datos" name="rol" id="rol">
+                        <option value="estudiante">Estudiante</option>
+                        <option value="docente">Docente</option>
+                    </select>
+                </div>
+
+                <div class="campo">
+                    <label for="usuario">Usuario</label>
+                    <input class="datos" type="text" id="usuario" name="usuario" value="caroZ11" required>
+                </div>
+
+                <div class="campo">
+                    <label for="email">Correo Electrónico</label>
+                    <input class="datos" type="email" id="email" name="email" value="caroZ11@example.com" readonly required>
+                </div>
+
+                <div class="campo">
+                    <label for="contraseña">Contraseña</label>
+                    <input class="datos" type="password" id="contraseña" name="contraseña" value="contraseña123" readonly required>
+                </div>
+
+                <div class="campo">
+                    <label for="telefono">Teléfono</label>
+                    <input class="datos" type="tel" id="telefono" name="telefono" value="123-456-7890">
+                </div>
+
+                <div class="campo">
+                    <label for="ciudad">Ciudad</label>
+                    <input class="datos" type="text" id="ciudad" name="ciudad" value="Jujuy" readonly required>
+                </div>
+
             </fieldset>
             
             <fieldset class="caja-rellena">
                 <legend class="caja-rellena">Preferencias de Sistema</legend>
-                <input type="checkbox" id="notificaciones" name="notificaciones" checked>
-                <label for="notificaciones">Recibir notificaciones por correo</label><br>
+                <div class="campo">
+                    <input type="checkbox" id="notificaciones-mail" name="notificaciones" checked>
+                    <label for="notificaciones-mail">Recibir notificaciones por correo</label>
+                </div>
+                <div class="campo">
+                    <input type="checkbox" id="notificaciones-telefono" name="notificaciones" checked>
+                    <label for="notificaciones-telefono">Recibir notificaciones por telefono</label>
+                </div>
             </fieldset>
         </form>
     </main>
