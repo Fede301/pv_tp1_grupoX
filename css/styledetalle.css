@@ -1,21 +1,25 @@
 :root {
   /* Colores Principales */
-  --color-primary: #334155;
-  /* Botones | Cajas*/
-  --color-tex-primary: white;
-  --color-secondary: #64748b;
-  /* Texto secundario */
-  --fondo-general: #0f172a;
-  /* Fondo general */
+  --color-primary:  #334155;   /* Botones | Cajas*/
+  --color-tex-primary: white;  /* Texto en cajas */
+  --color-secondary: #64748b;  /* Texto secundario */
+  --fondo-general: #0f172a;    /* Fondo general */ 
+  --color-efecto  : #3b82f6;   /* Efectos de hover */
   /* Tipografía */
   --font-main: 'Inter', sans-serif;
-
 }
 
 body {
   background-color: var(--fondo-general);
   margin: 0;
   font-size: 16px;
+}
+
+header{
+  background-color: var(--color-primary);
+  color: var(--color-tex-primary); 
+  text-align: center;
+  padding: 20px;
 }
 
 .menu {
@@ -36,7 +40,7 @@ body {
 }
 
 .menu li a:hover {
-  color: #3b82f6;
+  color: var(--color-efecto);
 }
 
 .sec-proyecto {

@@ -1,22 +1,21 @@
 :root {
   /* Colores Principales */
-  --color-primary:  #334155; /* Botones | Cajas*/
-  --color-secondary: #64748b; /* Texto secundario */
-  --bg-app: #f8fafc; /* Fondo general */
-  --fondo-general: #0f172a; /* Texto principal */
-  
+  --color-primary:  #334155;   /* Botones | Cajas*/
+  --color-tex-primary: white;  /* Texto en cajas */
+  --color-secondary: #64748b;  /* Texto secundario */
+  --fondo-general: #0f172a;    /* Fondo general */ 
+  --color-efecto  : #3b82f6;   /* Efectos de hover */
   /* Tipografía */
   --font-main: 'Inter', sans-serif;
-  --font-size-base: 16px;
-  --font-weight-bold: 600;
-  --color-efecto: #3b82f6;
 }
+
 .menu ul {
   display: flex;
   justify-content: center;
   list-style: none;
   padding: 0;
   background-color: var(--color-primary);
+  margin-top: 10px;
 }
 
 .menu li {
@@ -25,11 +24,11 @@
 .menu a {
   text-decoration: none;
   font-size: 20px;
-  color: white;
+  color: var(--color-tex-primary);
   font-family:Georgia;
 }
 .menu a:hover, article a:hover {
-    color: #3b82f6;
+    color: var(--color-efecto);
 }
 
 header {
@@ -40,8 +39,7 @@ header {
 }
 body{
   font-family: var(--font-main);
-  font-size: var(--font-size-base);
- background-color:#1e293b
+ background-color: var(--fondo-general)
  }
  * {
     margin: 0;
@@ -50,7 +48,7 @@ body{
 }
 
 h1, h2, h3, h4 {
-  color: var(--bg-app);
+  color: var(--color-tex-primary);
 }
 
 h2 {
@@ -81,10 +79,10 @@ article{
   align-items: center;
   margin: 0 auto;
   max-width: 600px;
-  background-color: #334155;
+  background-color: var(--color-primary);
 }
 article a {
-  color: #3b82f6;
+  color: var(--color-efecto);
   text-decoration: none;
   font-weight: bold;
   transition: color 0.3s;
@@ -95,7 +93,7 @@ article a:hover {
 }
 .caja-filtro {
     background-color: #1e293b; 
-    color: white;              
+    color: var(--color-tex-primary);              
     padding: 25px;             
     border-radius: 12px;       
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
@@ -133,4 +131,11 @@ article a:hover {
 
 .caja-filtro select:focus {
     border-color: #3b82f6; 
+}
+
+footer{
+  margin-top: 20px;
+  background-color: var(--color-primary);
+  text-align: center;
+  padding: 0px;
 }

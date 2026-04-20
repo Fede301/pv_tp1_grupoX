@@ -1,14 +1,13 @@
 
 :root {
   /* Colores Principales */
-  --color-primary:  #334155;    /* Botones | Cajas*/
-  --color-tex-primary: white;
+  --color-primary:  #334155;   /* Botones | Cajas*/
+  --color-tex-primary: white;  /* Texto en cajas */
   --color-secondary: #64748b;  /* Texto secundario */
-  --fondo-general: #0f172a;           /* Fondo general */ 
-  --color-efecto  : #3b82f6;     /* Efectos de hover */
+  --fondo-general: #0f172a;    /* Fondo general */ 
+  --color-efecto  : #3b82f6;   /* Efectos de hover */
   /* Tipografía */
   --font-main: 'Inter', sans-serif;
-  
 }
 
 body{
@@ -65,7 +64,7 @@ main {
   border-radius: 8px;
 }
 .lista-novedades{
-  list-styile: none;
+  /*list-styile: none;*/
   padding: 10;
   background-color: var(--color-primary);
   margin-bottom: 100px;
